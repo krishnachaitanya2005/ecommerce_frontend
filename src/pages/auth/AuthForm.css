@@ -1,0 +1,128 @@
+.auth-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px 20px;
+	background-color: var(--secondary-color);
+}
+.auth-form-wrapper {
+	background-color: var(--white-color);
+	padding: 40px;
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	width: 100%;
+	max-width: 450px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.auth-title {
+	text-align: start;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.input-group {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.input-group input {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: var(--secondary-color);
+}
+
+.input-group label {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	color: var(--light-text-color);
+	padding: 0 5px;
+	transition: all 0.2s ease;
+	pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+	top: 0;
+	font-size: 10px;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.password-toggle-icon {
+	position: absolute;
+	font-size: 17px;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: var(--light-text-color);
+}
+
+.auth-button {
+	width: 100%;
+	padding: 15px;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+	background-color: #e53840;
+	box-shadow: none;
+}
+
+.auth-separator {
+	text-align: center;
+	margin: 20px 0;
+	color: var(--light-text-color);
+}
+
+.google-signin-btn {
+	width: 100%;
+	padding: 15px;
+	background-color: var(--white-color);
+	color: var(--text-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.google-signin-btn svg {
+	font-size: 20px;
+}
+
+.auth-redirect {
+	text-align: center;
+	margin-top: 20px;
+}
+.auth-redirect a {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+.forgot-password {
+	display: block;
+	text-align: right;
+	margin: -15px 0 20px 0;
+	font-size: 14px;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.forgot-password:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,248 @@
+.page-header-bar {
+	background-color: var(--background-color);
+	padding: 16px 35px;
+	height: 90px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+}
+
+.page-header-title {
+	font-size: 23px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 3px;
+}
+
+.page-header-nav {
+	font-size: var(--text-font-size);
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.page-header-nav a {
+	color: var(--text-color);
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+.page-header-nav a:hover {
+	color: var(--primary-color);
+}
+
+.filter-button {
+	background: none;
+	border: none;
+	font-family: inherit;
+	font-size: var(--text-font-size);
+	font-weight: 500;
+	color: var(--text-color);
+	cursor: pointer;
+	padding: 0;
+	transition: color 0.2s ease;
+}
+
+.filter-button:hover {
+	color: var(--primary-color);
+}
+
+.filter-button.active {
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.product-listing-page {
+	display: grid;
+	grid-template-columns: 280px 1fr;
+	gap: 30px;
+	align-items: flex-start;
+}
+
+.item-count {
+	margin-bottom: 20px;
+	color: var(--light-text-color);
+}
+
+.filters-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.filter-card {
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.filter-title {
+	font-size: var(--text-font-size);
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.category-filter-list {
+	max-height: 250px;
+	overflow-y: auto;
+	padding-right: 10px;
+}
+
+.category-filter-item {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 12px;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.category-filter-item:hover {
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.category-filter-item.active {
+	background-color: var(--background-color);
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.category-filter-item svg {
+	font-size: 20px;
+}
+
+.price-labels {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.price-value {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.rating-filter-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.rating-filter-list li {
+	display: flex;
+	gap: 5px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.rating-filter-list li:hover {
+	background-color: var(--background-color);
+}
+
+.rating-filter-list li.active {
+	background-color: var(--background-color);
+	outline: 1px solid var(--primary-color);
+}
+
+.clear-filter-btn {
+	background: none;
+	border: none;
+	color: var(--primary-color);
+	cursor: pointer;
+	margin-top: 15px;
+	font-weight: 600;
+}
+
+.products-main {
+	flex: 1;
+}
+
+.products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.offer-filter-card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.offer-image {
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 3px solid transparent;
+	transition: all 0.2s ease;
+}
+
+.offer-image:hover {
+	transform: scale(1.03);
+}
+
+.offer-image.active {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 10px rgba(32, 178, 170, 0.5);
+}
+
+@media (max-width: 768px) {
+	.page-header-bar {
+		text-align: center;
+		padding: 15px 20px;
+		height: auto;
+	}
+
+	.page-header-nav {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.product-listing-page {
+		grid-template-columns: 1fr;
+	}
+
+	.products-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.filters-sidebar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--white-color);
+		z-index: 1001;
+		opacity: 0;
+		visibility: hidden;
+
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+		padding: 20px;
+		overflow-y: auto;
+	}
+
+	.filters-sidebar.open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.filter-sidebar-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.close-filter-btn {
+		background: none;
+		border: none;
+		font-size: 24px;
+		cursor: pointer;
+	}
+}

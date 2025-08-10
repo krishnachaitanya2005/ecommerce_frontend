@@ -1,0 +1,131 @@
+.account-page {
+	padding: 2rem 0;
+}
+
+.page-title {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.account-tabs {
+	display: flex;
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 30px;
+}
+
+.account-tabs button {
+	background: none;
+	border: none;
+	padding: 15px 20px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	color: var(--light-text-color);
+	position: relative;
+	top: 1px;
+	border-bottom: 2px solid transparent;
+}
+
+.account-tabs button.active {
+	color: var(--primary-color);
+	border-bottom-color: var(--primary-color);
+}
+
+.profile-form {
+	display: flex;
+	gap: 50px;
+	align-items: flex-start;
+}
+
+.profile-picture-section {
+	flex-shrink: 0;
+}
+
+.profile-picture-placeholder {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--secondary-color);
+	color: var(--light-text-color);
+}
+
+.profile-fields {
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 25px;
+}
+
+.profile-fields .input-group:nth-child(3) {
+	grid-column: 1;
+}
+
+.form-actions {
+	grid-column: 1 / span 2;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+
+.account-content .input-group {
+	position: relative;
+}
+
+.account-content .input-group input {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	font-size: 16px;
+	background-color: var(--secondary-color);
+}
+
+.account-content .input-group label {
+	position: absolute;
+	top: -10px;
+	left: 12px;
+	font-size: 12px;
+	background-color: var(--white-color);
+	padding: 0 5px;
+	color: var(--primary-color);
+}
+
+.password-form {
+	max-width: 100%;
+}
+
+.password-form-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+}
+
+@media (max-width: 768px) {
+	.profile-form {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.profile-fields {
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+
+	.profile-fields .input-group:nth-child(3) {
+		grid-column: auto;
+	}
+
+	.form-actions {
+		justify-content: flex-start;
+	}
+
+	.password-form-grid {
+		grid-template-columns: 1fr;
+	}
+}

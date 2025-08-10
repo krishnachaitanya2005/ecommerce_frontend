@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--white-color);
+	font-size: var(--text-font-size);
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: var(--heading-font-size);
+}
+.container {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 45px;
+	padding-right: 45px;
+	width: 100%;
+}
+
+.main-content {
+	padding-top: 123px;
+	min-height: calc(100vh - 100px);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.my-2 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.Toastify__toast-container {
+	width: 350px;
+}
+
+.custom-toast.Toastify__toast--success {
+	background-color: #28a745 !important;
+	color: white;
+	border-radius: 8px;
+	font-family: var(--font-family);
+	font-weight: 500;
+}
+
+.custom-toast .Toastify__toast-icon {
+	color: white !important;
+}
+
+.custom-toast .Toastify__close-button {
+	color: white !important;
+	opacity: 0.8;
+}
+.custom-toast .Toastify__close-button:hover {
+	opacity: 1;
+}
+
+.custom-toast .Toastify__progress-bar {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding-left: 4px !important;
+		padding-right: 4px !important;
+	}
+
+	.main-content {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}

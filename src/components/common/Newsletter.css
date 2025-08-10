@@ -1,0 +1,103 @@
+.newsletter-section {
+	background-color: var(--background-color);
+	margin-top: 40px;
+	height: 300px;
+	border-radius: 20px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding: 0 40px;
+	display: flex;
+	align-items: center;
+}
+
+.newsletter-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.newsletter-content {
+	flex: 1;
+}
+
+.newsletter-content h2 {
+	font-size: 30px;
+	font-weight: 500;
+	color: #565656;
+	margin-bottom: 10px;
+}
+.newsletter-content p {
+	font-size: 15px;
+	color: #858585;
+}
+
+.newsletter-form {
+	margin-top: 20px;
+	display: flex;
+	max-width: 450px;
+}
+
+.newsletter-form input {
+	flex-grow: 1;
+	padding: 15px;
+	border: none;
+	border-radius: 25px 0 0 25px;
+}
+
+.newsletter-form button {
+	padding: 15px 30px;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	border-radius: 0 25px 25px 0;
+	cursor: pointer;
+	font-weight: 600;
+	transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+	background-color: #e53840;
+	box-shadow: none;
+}
+
+.newsletter-image {
+	flex-shrink: 0;
+}
+
+.newsletter-image img {
+	max-height: 280px;
+	width: auto;
+}
+
+/* --- Media Query for Mobile --- */
+@media (max-width: 768px) {
+	.newsletter-section {
+		height: auto;
+		padding: 40px 20px;
+		/* Use the mobile padding variable if you have one, or set it here */
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: center;
+	}
+
+	.newsletter-image {
+		display: none;
+	}
+
+	.newsletter-container {
+		justify-content: center;
+	}
+
+	.newsletter-content h2 {
+		font-size: 24px;
+	}
+	.newsletter-content p {
+		font-size: var(--mobile-text-size);
+	}
+
+	.newsletter-form {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,96 @@
+.checkout-page {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 50px;
+	padding: 2rem 0;
+	align-items: flex-start;
+}
+
+.section-title {
+	font-size: var(--heading-font-size);
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.billing-details-form .form-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px; 
+}
+
+.billing-details-form .input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.billing-details-form .input-group label {
+	margin-bottom: 8px;
+	font-weight: 500;
+	font-size: var(--text-font-size);
+}
+
+.billing-details-form .input-group input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: var(--text-font-size); /
+}
+
+.order-summary-box {
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 15px 15px;
+	width: 300px !important;
+	height: auto !important;
+	background-color: var(--secondary-color);
+}
+
+.order-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 25px;
+}
+
+.order-table th,
+.order-table td {
+	text-align: left;
+	padding: 5px 0;
+	border-bottom: 1px solid var(--border-color);
+	font-size: var(--text-font-size);
+}
+
+.order-table thead th {
+	font-size: var(--heading-font-size); 
+	color: var(--text-color);
+}
+
+.order-table tbody td:last-child,
+.order-table tfoot td {
+	text-align: right;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.order-table tfoot tr:last-child th,
+.order-table tfoot tr:last-child td {
+	font-size: var(--heading-font-size);
+	color: var(--text-color);
+}
+
+.order-summary-box .btn {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+    .checkout-page {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .billing-details-form .form-grid {
+        grid-template-columns: 1fr; 
+    }
+}

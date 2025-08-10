@@ -1,0 +1,158 @@
+.footer {
+	background-color: var(--white-color);
+	padding: 15px 0 0;
+	color: var(--light-text-color);
+	font-size: var(--text-font-size);
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.footer-column {
+	flex: 1;
+	min-width: 200px;
+}
+.footer-about {
+	padding-right: 20px;
+}
+
+.footer-logo {
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--primary-color);
+	display: block;
+	margin-bottom: 15px;
+}
+
+.footer-desc {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-column h4 {
+	color: var(--text-color);
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.footer-column ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-column ul li {
+	margin-bottom: 12px;
+}
+
+.footer-column ul li a:hover {
+	color: var(--primary-color);
+	padding-left: 5px;
+	transition: all 0.2s ease;
+}
+
+.contact-info svg {
+	font-size: 15px;
+	margin-right: 10px;
+	color: var(--primary-color);
+}
+
+.contact-info strong {
+	color: var(--text-color);
+}
+
+.footer-bottom {
+	padding: 20px 0;
+	border-top: 1px solid var(--border-color);
+	margin-top: 15px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.footer-bottom-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.social-links svg {
+	font-size: 15px;
+}
+
+.social-links span {
+	font-weight: 600;
+	margin-right: 10px;
+	color: var(--text-color);
+}
+
+.social-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+	transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+	.footer {
+		font-size: var(--mobile-text-size);
+	}
+
+	.footer-container {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.footer-links-wrapper {
+		display: flex;
+		flex-direction: row;
+		overflow-x: auto;
+		padding-bottom: 15px;
+		gap: 40px;
+	}
+
+	.footer-links-wrapper .footer-column {
+		min-width: 160px;
+	}
+
+	.contact-info,
+	.footer-column ul {
+		text-align: left;
+		padding: 0;
+	}
+
+	.contact-info li {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 5px;
+	}
+
+	.footer-bottom {
+		padding-bottom: 75px;
+	}
+
+	.footer-bottom-container {
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+}
