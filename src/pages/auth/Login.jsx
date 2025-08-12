@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useGlobalState } from "../../context/GlobalStateContext";
 import { toast } from "react-toastify";
-import { FaEye, FaEyeSlash } from "react-icons/fa"; 
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import "./AuthForm.css";
 
@@ -21,11 +21,11 @@ const Login = () => {
 		try {
 			const fakeToken = "12345abcdef-fake-token";
 
-			login(fakeToken); 
+			login(fakeToken);
 			navigate("/");
 		} catch (error) {
 			console.error("Login failed:", error);
-			}
+		}
 	};
 	const handleForgotPasswordClick = () => {
 		if (!formData.email) {

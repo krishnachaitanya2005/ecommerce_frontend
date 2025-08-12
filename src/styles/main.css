@@ -92,4 +92,14 @@ h6 {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
+	.Toastify__toast-container {
+		width: auto;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+	}
+
+	.Toastify__toast {
+		font-size: 14px;
+	}
 }

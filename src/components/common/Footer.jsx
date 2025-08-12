@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
 	FaMapMarkerAlt,
 	FaHeadset,
@@ -15,6 +15,10 @@ import FeatureBoxes from "./FeatureBoxes";
 import "./Footer.css";
 
 const Footer = () => {
+	const location = useLocation();
+	if (location.pathname.startsWith("/admin")) {
+		return null;
+	}
 	return (
 		<>
 			<Newsletter />

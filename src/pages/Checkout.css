@@ -15,7 +15,7 @@
 .billing-details-form .form-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 15px; 
+	gap: 15px;
 }
 
 .billing-details-form .input-group {
@@ -36,7 +36,7 @@
 	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	font-family: inherit;
-	font-size: var(--text-font-size); /
+	font-size: var(--text-font-size);
 }
 
 .order-summary-box {
@@ -63,7 +63,7 @@
 }
 
 .order-table thead th {
-	font-size: var(--heading-font-size); 
+	font-size: var(--heading-font-size);
 	color: var(--text-color);
 }
 
@@ -85,12 +85,12 @@
 }
 
 @media (max-width: 768px) {
-    .checkout-page {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+	.checkout-page {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
 
-    .billing-details-form .form-grid {
-        grid-template-columns: 1fr; 
-    }
+	.billing-details-form .form-grid {
+		grid-template-columns: 1fr;
+	}
 }

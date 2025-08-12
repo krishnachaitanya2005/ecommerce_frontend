@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+
 import { toast } from "react-toastify";
 import {
 	FaMapMarkerAlt,
@@ -17,7 +18,7 @@ import {
 import { useGlobalState } from "../../context/GlobalStateContext";
 import { useOnClickOutside } from "../../hooks/useClickOutside";
 import allCountries from "../../data/countries";
-import { allProducts } from "../../data/allProducts"; 
+import { allProducts } from "../../data/allProducts";
 import MobileSidebar from "./MobileSidebar";
 import "./Header.css";
 
@@ -25,6 +26,7 @@ const Header = () => {
 	const { isAuthenticated, logout, cartItems, wishlistItems } =
 		useGlobalState();
 	const navigate = useNavigate();
+	const location = useLocation();
 
 	const [searchQuery, setSearchQuery] = useState("");
 	const [searchResults, setSearchResults] = useState([]);
@@ -34,9 +36,13 @@ const Header = () => {
 	const [isAccountOpen, setIsAccountOpen] = useState(false);
 	const [selectedCountry, setSelectedCountry] = useState("All");
 	const [locationSearchTerm, setLocationSearchTerm] = useState("");
-	const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
+	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
 	const [hoveredItem, setHoveredItem] = useState(null);
+
+	if (location.pathname.startsWith("/admin")) {
+		return null;
+	}
 
 	const searchRef = useRef(null);
 	useOnClickOutside(searchRef, () => setSearchResults([]));
@@ -59,7 +65,7 @@ const Header = () => {
 	};
 
 	const handleLogout = () => {
-		logout(); 
+		logout();
 		navigate("/");
 	};
 

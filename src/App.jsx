@@ -32,7 +32,7 @@ function App() {
 				theme="colored"
 			/>
 			<Header />
-			<SearchModal /> 
+			<SearchModal />
 			<main className="main-content">
 				<div className="container">
 					<Routes>

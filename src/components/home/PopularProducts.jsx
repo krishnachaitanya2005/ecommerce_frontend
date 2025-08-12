@@ -11,7 +11,7 @@ const allPopularProducts = [
 	{
 		_id: "5",
 		name: "VNEED Women Embroidered Kurta",
-		images: [{ url: "" }],
+		images: [{ url: "assets/product_images/pic1.jpg" }],
 		price: 450,
 		originalPrice: 490,
 		category: "Fashion",
@@ -21,7 +21,7 @@ const allPopularProducts = [
 	{
 		_id: "6",
 		name: "Black Solid Casual Shirt",
-		images: [{ url: "" }],
+		images: [{ url: "assets/product_images/pic2.jpg" }],
 		price: 459,
 		originalPrice: 495,
 		category: "Fashion",
@@ -31,7 +31,7 @@ const allPopularProducts = [
 	{
 		_id: "3",
 		name: "Samsung Galaxy Watch 5",
-		images: [{ url: "" }],
+		images: [{ url: "assets/product_images/pic3.jpg" }],
 		price: 250,
 		originalPrice: 299,
 		category: "Electronics",
@@ -41,7 +41,7 @@ const allPopularProducts = [
 	{
 		_id: "1",
 		name: "HP Laptop 15s",
-		images: [{ url: "" }],
+		images: [{ url: "assets/product_images/pic4.jpg" }],
 		price: 3000,
 		originalPrice: 3500,
 		category: "Electronics",
@@ -51,7 +51,7 @@ const allPopularProducts = [
 	{
 		_id: "7",
 		name: "Classic Leather Bag",
-		images: [{ url: "" }],
+		images: [{ url: "assets/product_images/pic5.jpg" }],
 		price: 120,
 		originalPrice: 150,
 		category: "Bags",

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom"; 
+import { NavLink, useLocation } from "react-router-dom";
 import {
 	FaHome,
 	FaThList,
@@ -16,6 +16,9 @@ import "./BottomNav.css";
 const BottomNav = () => {
 	const { toggleFilterSidebar, toggleSearchModal } = useGlobalState();
 	const location = useLocation();
+	if (location.pathname.startsWith("/admin")) {
+		return null;
+	}
 
 	const isProductListingPage = location.pathname.startsWith("/products/");
 	return (
