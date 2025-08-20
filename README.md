@@ -1,12 +1,30 @@
-# React + Vite
+# Shopstic E-commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a fully responsive e-commerce frontend application built during my internship. It showcases a modern, user-friendly interface for an online shopping experience, allowing users to browse products, manage their cart, and simulate a checkout process.
 
-Currently, two official plugins are available:
+Live Demo: `ecommerce-frontend-vert-ten.vercel.app`
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  **Product Catalog:** Browse a wide variety of products with detailed descriptions and images.
 
-## Expanding the ESLint configuration
+  **Search & Filter:** Easily find products using the search bar and filtering options.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  **Shopping Cart:** Add, remove, and update product quantities in the cart.
+
+  **User Authentication:** Simulated user login and registration functionality.
+
+  **Responsive Design:** A seamless experience across all devices, from mobile phones to desktops.
+
+  **Checkout Simulation:** A multi-step checkout process to mimic a real-world purchase.
+
+  **Admin Dashboard:** A dedicated interface for managing products and viewing site analytics. To access it, navigate to `/admin` after logging in with admin credentials.
+
+## 🛠️ Technologies Used
+
+  **Frontend:** React.js, Redux for state management, React Router for navigation.
+
+  **Styling:** CSS Modules, Tailwind CSS (or specify your styling solution).
+
+  **API:** Integrated with a dummy API (like FakeStoreAPI) for product data.
+
+  **Deployment:** Vercel
